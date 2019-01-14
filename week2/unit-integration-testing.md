@@ -23,14 +23,15 @@ Integration/Combining testing is a software testing methodology used to test ind
 ### Approaches/Methodologies/Strategies of Integration Testing:
 - Big Bang Approach.
 - Incremental Approach: which is further divided into the following
-    - **Top Down Approach**
+    - **Top Down Approach**  
     ![Top Down](https://www.guru99.com/images/top-down-integration-testing.png)
    ---
-    -  **Bottom Up Approach**
+   
+    -  **Bottom Up Approach**  
     ![Bottom UP](https://www.guru99.com/images/bottom-up-integration-testing.png)
-    --- 
+   --- 
 
-    -  **Sandwich Approach** - Combination of Top Down and Bottom Up
+    -  **Sandwich Approach** - Combination of Top Down and Bottom Up  
     ![Sandwich Approach](https://www.guru99.com/images/1/Hybrid-Integration.png)
 ---
 ### Unit Testing vs Integration Testing
