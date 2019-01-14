@@ -36,8 +36,8 @@ var child = document.getElementById("p1");
 parent.replaceChild(newParagraph, child);
 
 ```
-## How would you add a <li> element to the start of a <ul>?
-- add a <li> element to the start of a <ul>
+## How would you add a ```<li>``` element to the start of a ```<ul>```?
+- add a ```<li>``` element to the start of a ```<ul>```.
 ```
 <ul id="list">
 	<li>item 1</li>
