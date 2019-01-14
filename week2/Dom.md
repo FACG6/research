@@ -4,7 +4,7 @@
 - you must create the element (element node) first, and then append it to an existing element here use appendChild(element) here add the new element in the of the parent element.
 Example : 
 ```
-ar newParagraph = document.createElement("p");
+var newParagraph = document.createElement("p");
 var content = document.createTextNode("This is new.");
 newParagraph.appendChild(content);
 var parent = document.getElementById("div1");
