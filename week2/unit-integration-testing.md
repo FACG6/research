@@ -35,7 +35,7 @@ Integration/Combining testing is a software testing methodology used to test ind
     ![Sandwich Approach](https://www.guru99.com/images/1/Hybrid-Integration.png)
 ---
 ### Unit Testing vs Integration Testing
-|**Unit**                                         |**Integration**                                                   |
+|**Unit Testing**                                 |**Integration Testing**                                           |
 |-------------------------------------------------|------------------------------------------------------------------|
 |To test small piece of your code                 |To test comined modules of your code and tests them as a group    |
 |kind of White Box Testing                        |    It is kind of Black Box Testing                               |
