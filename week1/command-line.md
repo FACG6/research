@@ -1,4 +1,4 @@
-1. Command Line Customization  
+1. # Command Line Customization  
     - How do I display current (default) prompt setting?
     Simply use echo command, enter:  
     >$ echo $PS1  
