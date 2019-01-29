@@ -1,59 +1,3 @@
-# **Enviroment Variables**
-Environment variables are a fundamental part of developing with Node.js, allowing your app to behave differently based on the environment you want them to run in. Wherever your app needs configuration, you use environment variables. And they’re so simple, they’re beautiful!
-
-## **Why?**
-### why should you use Enviroment Variables?
-Now you can run your app anywhere by modifying the environment variables without changing your code and without rebuilding it!
-
-## **When?**
-### When should you use Enviroment Variables?
-OK, so now you ask me when you should use them. In short, **any place in your code that will change based on the environment**
-
-## **HOW?**
-
-Create server.js file :
-
-```
-// server.js
-const port = process.env.PORT;
-console.log(Your port is ${port});
-```
-
-Now when you execute node server.js you should see a message that says “Your port is undefined”.
-
-Your environment variable isn’t there because we need to pass them in. Let’s consider some ways we can fix this.
-
-1. using the command line
-2. using a .env file
-   Command Line
-
-```
-PORT=8626 node server.js
-```
-
-Less Mess with a .env File
-Running them from a command line is convenient, sure. But it has its drawbacks:
-
-1. there is no good place to see the list of variables
-2. it’s far too easy to make a typing mistake from the command line
-3. it’s not ideal to remember all of the variables and their values
-4. even with npm scripts, you still have to keep them current
-   Create the .env file in the root of your app and add your variables and values to it.
-
-Reading the .env File
-Install dotenv from npm
-You want to read the .env file and the dotenv package on npm does this very well. Install the dotenv package by running the following command
-npm install dotenv
-
-```
-// server.js
-console.log(Your port is ${process.env.PORT}); // undefined
-const dotenv = require('dotenv');
-dotenv.config();
-console.log(Your port is ${process.env.PORT}); // 8626
-```
-
-
 # **Cloud Deploying**
 
 ## **What is PaaS ?**
@@ -153,3 +97,59 @@ $git push heroku master
 ```
 $heroku open
 ```
+
+# **Enviroment Variables**
+Environment variables are a fundamental part of developing with Node.js, allowing your app to behave differently based on the environment you want them to run in. Wherever your app needs configuration, you use environment variables. And they’re so simple, they’re beautiful!
+
+## **Why?**
+### why should you use Enviroment Variables?
+Now you can run your app anywhere by modifying the environment variables without changing your code and without rebuilding it!
+
+## **When?**
+### When should you use Enviroment Variables?
+OK, so now you ask me when you should use them. In short, **any place in your code that will change based on the environment**
+
+## **HOW?**
+
+Create server.js file :
+
+```
+// server.js
+const port = process.env.PORT;
+console.log(Your port is ${port});
+```
+
+Now when you execute node server.js you should see a message that says “Your port is undefined”.
+
+Your environment variable isn’t there because we need to pass them in. Let’s consider some ways we can fix this.
+
+1. using the command line
+2. using a .env file
+   Command Line
+
+```
+PORT=8626 node server.js
+```
+
+Less Mess with a .env File
+Running them from a command line is convenient, sure. But it has its drawbacks:
+
+1. there is no good place to see the list of variables
+2. it’s far too easy to make a typing mistake from the command line
+3. it’s not ideal to remember all of the variables and their values
+4. even with npm scripts, you still have to keep them current
+   Create the .env file in the root of your app and add your variables and values to it.
+
+Reading the .env File
+Install dotenv from npm
+You want to read the .env file and the dotenv package on npm does this very well. Install the dotenv package by running the following command
+npm install dotenv
+
+```
+// server.js
+console.log(Your port is ${process.env.PORT}); // undefined
+const dotenv = require('dotenv');
+dotenv.config();
+console.log(Your port is ${process.env.PORT}); // 8626
+```
+
